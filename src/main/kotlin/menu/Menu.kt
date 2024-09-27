@@ -27,11 +27,13 @@ class Menu(private val qualificationRepository: QualificationRepository, private
     }
 
     private fun execute3() {
+        qualificationRepository.qualificationFinal(qualifications)
         val approved = qualificationRepository.classifyStudents(qualifications)
         console.showApproved(approved.first)
     }
 
     private fun execute4() {
+        qualificationRepository.qualificationFinal(qualifications)
         val suspended = qualificationRepository.classifyStudents(qualifications)
         console.showSuspended(suspended.second)
     }
