@@ -15,28 +15,28 @@ class Console {
     fun showStudents(map: MutableMap<String, MutableMap<String, String>>) {
         println("\nESTUDIANTES:")
         map.forEach { (k, v) ->
-            println("$k, ${v["Nombre"]} -> Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}")
+            println("$k, ${v["Nombre"]} -> Asistencia: ${v["Asistencia"]}, Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}")
         }
     }
 
     fun showStudentsFinal(map: MutableMap<String, MutableMap<String, String>>) {
         println("\nNOTA FINAL:")
         map.forEach { (k,v) ->
-            println("$k, ${v["Nombre"]} -> Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}, Nota Final: ${v["NotaFinal"]}")
+            println("$k, ${v["Nombre"]} -> Asistencia: ${v["Asistencia"]}, Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}, Nota Final: ${v["NotaFinal"]}")
         }
     }
 
     fun showApproved(approved: MutableMap<String, MutableMap<String, String>>) {
         println("\nAPROBADOS:")
         approved.forEach { (k,v) ->
-            println("$k, ${v["Nombre"]} -> Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}, Nota Final: ${v["NotaFinal"]}")
+            println("$k, ${v["Nombre"]} -> Asistencia: ${v["Asistencia"]}, Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}, Nota Final: ${v["NotaFinal"]}")
         }
     }
 
     fun showSuspended(suspended: MutableMap<String, MutableMap<String, String>>) {
         println("\nSUSPENSOS:")
         suspended.forEach { (k,v) ->
-            println("$k, ${v["Nombre"]} -> Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}, Nota Final: ${v["NotaFinal"]}")
+            println("$k, ${v["Nombre"]} -> Asistencia: ${v["Asistencia"]}, Parcial 1: ${v["Parcial1"]}, Parcial 2: ${v["Parcial2"]}${if(v["Ordinario1"] != "") ", Ordinario 1: ${v["Ordinario1"]}" else ""}${if(v["Ordinario2"] != "") ", Ordinario 2: ${v["Ordinario2"]}" else ""}${if(v["Practicas"] != "") ", Practicas: ${v["Practicas"]}" else ""}${if(v["OrdinarioPracticas"] != "") ", Ordinario Practicas: ${v["OrdinarioPracticas"]}" else ""}, Nota Final: ${v["NotaFinal"]}")
         }
     }
 

@@ -85,7 +85,7 @@ class QualificationRepository(private val fileDir: Path) {
             if (pract == null) pract = 0.0
             if (nFinal == null) nFinal = 0.0
 
-            if (att > 75 && p1 >= 4 && p2 >= 4 && pract >= 4 && nFinal >= 5) approved[k] = v
+            if (att >= 75 && p1 >= 4 && p2 >= 4 && pract >= 4 && nFinal >= 5) approved[k] = v
             else suspended[k] = v
 
         }
